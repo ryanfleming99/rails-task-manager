@@ -1,9 +1,9 @@
-<h1>My Tasks:</h1>
+<h1>edit:</h1>
 
-<%= form_for(@task) do |f| %>
-<%= f.label :title  %>
-<%= f.text_field :title %>
-<%= f.submit %>
+<%= form_for @task, url: update_path, method: :patch do |f| %>
+  <%= f.label :title  %>
+  <%= f.text_field :title %>
+  <%= f.submit %>
 <% end %>
 
 
